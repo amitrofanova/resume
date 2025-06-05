@@ -1,47 +1,53 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import DescriptionBlock from './components/DescriptionBlock.vue';
+import ContactsBlock from './components/ContactsBlock.vue';
+import ExperienceBlock from './components/ExperienceBlock.vue';
+import EducationBlock from './components/EducationBlock.vue';
+import SkillsBlock from './components/SkillsBlock.vue';
+import ContributionBlock from './components/ContributionBlock.vue';
+import { useFetch } from './composables/useFetch.ts';
+
+interface ApplicantData {
+  name: string;
+  jobTitle: string;
+  about: string;
+  contacts: object[];
+  experience: object[];
+  skills: object[];
+  education: object;
+  contribution: string[];
+}
+
+const { data, error, loading } = useFetch<ApplicantData>('/data.json');
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
   <main>
-    <TheWelcome />
+    <div v-if="loading">Loading...</div>
+    <div v-else-if="error">{{ error }}</div>
+    <div v-else>
+      <div class="container max-w-5xl h-vh flex">
+        <section class="w-1/2 flex flex-col gap-10 p-5 bg-orange-300">
+          <DescriptionBlock>
+            <template #name>
+              {{ data?.name }}
+            </template>
+            <template #jobTitle>
+              {{ data?.jobTitle }}
+            </template>
+            <template #about>
+              {{ data?.about }}
+            </template>
+          </DescriptionBlock>
+          <ContactsBlock :contacts="data?.contacts" />
+        </section>
+        <section class="grow p-5 bg-gray-50">
+          <ExperienceBlock :items="data?.experience" />
+          <EducationBlock :data="data?.education" />
+          <SkillsBlock :data="data?.skills" />
+          <ContributionBlock :data="data?.contribution" />
+        </section>
+      </div>
+    </div>
   </main>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
