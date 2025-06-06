@@ -1,8 +1,5 @@
 <script setup lang="ts">
-interface ContactItem {
-  [key: string]: string | boolean | undefined;
-  preferable?: boolean;
-}
+import type ContactItem from '../types/models/contact.ts';
 
 interface Props {
   contacts: ContactItem[];

@@ -1,15 +1,6 @@
 <script setup lang="ts">
 import BaseHeader from '../components/BaseHeader.vue';
-
-interface ExperienceItem {
-  jobTitle: string;
-  companyName: string;
-  companyWebsite: string;
-  beginDate: string;
-  endDate: string;
-  tasks: string[];
-  stack?: string[];
-}
+import type ExperienceItem from '../types/models/experience.ts';
 
 interface Props {
   items: ExperienceItem[];
@@ -21,7 +12,7 @@ const getStaskString = (stackArray: string[]) => stackArray.join(', ');
 </script>
 
 <template>
-  <BaseHeader type="h2">Опыт работы</BaseHeader>
+  <BaseHeader headingLevel="h2">Опыт работы</BaseHeader>
   <div v-for="item in items" :key="item.jobTitle" class="grid gap-2">
     <h3 class="mt-3 text-lg font-bold">{{ item.jobTitle }}</h3>
     <div class="flex items-center">

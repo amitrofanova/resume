@@ -1,19 +1,16 @@
 <script setup lang="ts">
 import BaseHeader from '../components/BaseHeader.vue';
-
-type Level = 'basic' | 'middle' | 'advanced';
-
-type Skills = Record<string, Level>;
+import type { SkillItem } from '../types/models/skill.ts';
 
 interface Props {
-  data: Skills;
+  data: SkillItem[];
 }
 
 defineProps<Props>();
 </script>
 
 <template>
-  <BaseHeader type="h2">Навыки</BaseHeader>
+  <BaseHeader headingLevel="h2">Навыки</BaseHeader>
   <div class="flex flex-wrap gap-2">
     <div v-for="(item, index) in data" :key="index" class="p-2 bg-orange-300">
       {{ Object.keys(item)[0] }}

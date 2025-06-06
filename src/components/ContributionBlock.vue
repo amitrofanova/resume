@@ -9,7 +9,7 @@ defineProps<Props>();
 </script>
 
 <template>
-  <BaseHeader type="h2">Дополнительный вклад</BaseHeader>
+  <BaseHeader headingLevel="h2">Дополнительный вклад</BaseHeader>
   <p v-for="(item, index) in data" :key="index">
     {{ item }}
   </p>

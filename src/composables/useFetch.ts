@@ -1,9 +1,9 @@
-import type { ShallowRef } from 'vue';
+import type { Ref } from 'vue';
 
 interface UseFetchResult<T> {
-  data: ShallowRef<T | null>;
-  error: ShallowRef<Error | null>;
-  loading: ShallowRef<boolean>;
+  data: Ref<T | null>;
+  error: Ref<Error | null>;
+  loading: Ref<boolean>;
 }
 
 export function useFetch<T>(url: string): UseFetchResult<T> {
