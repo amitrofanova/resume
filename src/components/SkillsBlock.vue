@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import BaseHeader from '../components/BaseHeader.vue';
 import type { SkillItem } from '../types/models/skill.ts';
 
 interface Props {

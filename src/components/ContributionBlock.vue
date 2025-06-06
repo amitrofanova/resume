@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import BaseHeader from '../components/BaseHeader.vue';
-
 interface Props {
   data: string[];
 }

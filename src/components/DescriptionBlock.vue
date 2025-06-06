@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import BaseHeader from '../components/BaseHeader.vue';
-</script>
-
 <template>
   <div class="flex flex-col gap-2 pt-10">
     <BaseHeader headingLevel="h1" class="break-words pr-10"><slot name="name"></slot></BaseHeader>

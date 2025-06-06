@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import BaseHeader from '../components/BaseHeader.vue';
 import type Education from '../types/models/education.ts';
 
 interface Props {

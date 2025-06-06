@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import BaseHeader from '../components/BaseHeader.vue';
 import type ExperienceItem from '../types/models/experience.ts';
 
 interface Props {
