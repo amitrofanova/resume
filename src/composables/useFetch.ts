@@ -1,19 +1,20 @@
 import type { Ref } from 'vue';
+import type { ApplicantData } from '../types/app';
 
-interface UseFetchResult<T> {
-  data: Ref<T | null>;
+interface UseFetchResult {
+  data: Ref<ApplicantData | null>;
   error: Ref<Error | null>;
   loading: Ref<boolean>;
 }
 
-export function useFetch<T>(url: string): UseFetchResult<T> {
-  const data = shallowRef<T | null>(null);
-  const error = shallowRef<Error | null>(null);
-  const loading = shallowRef(true);
+export function useFetch(url: string): UseFetchResult {
+  const data = ref<ApplicantData | null>(null);
+  const error = ref<Error | null>(null);
+  const loading = ref(true);
 
   fetch(url)
     .then((res) => res.json())
-    .then((json: T) => {
+    .then((json: ApplicantData) => {
       data.value = json;
     })
     .catch((err: Error) => {
