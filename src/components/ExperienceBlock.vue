@@ -23,7 +23,7 @@ const getStaskString = (stackArray: string[]) => stackArray.join(', ');
     </div>
     <p class="text-xs">{{ item.beginDate }} - {{ item.endDate }}</p>
     <ul class="list-disc list-inside">
-      <li v-for="task in item.tasks" :key="task" class="text-sm text-gray-700">{{ task }}</li>
+      <li v-for="task in item.tasks" :key="task" class="text-sm">{{ task }}</li>
     </ul>
     <div v-if="item.stack?.length">
       <h4 class="text-md underline">Стек:</h4>
