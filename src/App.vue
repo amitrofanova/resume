@@ -6,9 +6,10 @@ import EducationBlock from './components/EducationBlock.vue';
 import SkillsBlock from './components/SkillsBlock.vue';
 import ContributionBlock from './components/ContributionBlock.vue';
 import { useFetch } from './composables/useFetch.ts';
-import type { ApplicantData } from './types/app.ts';
 
-const { data, error, loading } = useFetch<ApplicantData>('/data.json');
+const baseUrl = import.meta.env.BASE_URL;
+
+const { data, error, loading } = useFetch(`${baseUrl}data.json`);
 </script>
 
 <template>
