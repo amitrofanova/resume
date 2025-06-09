@@ -30,7 +30,7 @@ const { data, error, loading } = useFetch(`${baseUrl}data.json`);
           </DescriptionBlock>
           <ContactsBlock :contacts="data.contacts" />
         </section>
-        <section class="grow p-5 bg-gray-50">
+        <section class="grow p-5 pb-20 bg-gray-50">
           <ExperienceBlock :items="data.experience" />
           <EducationBlock :data="data.education" />
           <SkillsBlock :data="data.skills" />

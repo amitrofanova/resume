@@ -6,6 +6,18 @@ interface Props {
 }
 
 defineProps<Props>();
+
+const getLink = (item: ContactItem) => {
+  switch (item.type) {
+    case 'phone':
+      return `tel:${item.value}`;
+    case 'email':
+      return `mailto:${item.value}`;
+
+    default:
+      return item.value;
+  }
+};
 </script>
 
 <template>
@@ -14,7 +26,7 @@ defineProps<Props>();
       <span v-if="contact?.preferable" class="font-bold text-sm font-bold"
         >Предпочтительный способ связи</span
       >
-      <span>{{ Object.values(contact)[0] }}</span>
+      <a :href="getLink(contact)" target="_blank" class="text-gray-500">{{ contact.value }}</a>
     </li>
   </ul>
 </template>

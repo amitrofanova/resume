@@ -1,4 +1,7 @@
+type ContactType = 'phone' | 'email' | 'messenger';
+
 export default interface ContactItem {
-  [key: string]: string | boolean | undefined;
+  type: ContactType;
+  value: string;
   preferable?: boolean;
 }
