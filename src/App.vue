@@ -15,8 +15,8 @@ const { data, error, loading } = useFetch(`${baseUrl}data.json`);
 <template>
   <main>
     <div v-if="data">
-      <div class="container max-w-5xl h-vh flex">
-        <section class="w-1/2 flex flex-col gap-10 p-5 bg-orange-300">
+      <div class="container max-w-5xl h-vh md:flex">
+        <section class="md:w-1/2 flex flex-col gap-10 p-5 bg-orange-300">
           <DescriptionBlock>
             <template #name>
               {{ data.name }}
