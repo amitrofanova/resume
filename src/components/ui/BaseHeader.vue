@@ -12,7 +12,7 @@ const props = withDefaults(defineProps<Props>(), {
 });
 
 const headerClasses = computed(() => {
-  const classes = ['mt-6', 'mb-2', 'font-bold'];
+  const classes = ['mt-6', 'mb-2', 'font-bold', 'text-primary'];
 
   switch (props.headingLevel) {
     case 'h1':

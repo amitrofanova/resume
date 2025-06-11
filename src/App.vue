@@ -20,7 +20,7 @@ const { data, error, loading } = useFetch(`${baseUrl}data.json`);
         <header class="absolute left-0 right-0 h-10 flex justify-end items-end pr-5">
           <ThemeToggle />
         </header>
-        <section class="md:w-1/2 flex flex-col gap-10 p-5 bg-orange-300">
+        <section class="md:w-1/2 flex flex-col gap-10 p-5 bg-surface text-text">
           <DescriptionBlock>
             <template #name>
               {{ data.name }}
@@ -34,7 +34,7 @@ const { data, error, loading } = useFetch(`${baseUrl}data.json`);
           </DescriptionBlock>
           <ContactsBlock :contacts="data.contacts" />
         </section>
-        <section class="grow p-5 pb-20 bg-gray-50 dark:bg-gray-600 dark:text-white">
+        <section class="grow p-5 pb-20 bg-bg text-text border-r border-[var(--color-surface)]">
           <ExperienceBlock :items="data.experience" />
           <EducationBlock :data="data.education" />
           <SkillsBlock :data="data.skills" />

@@ -11,7 +11,7 @@ defineProps<Props>();
 <template>
   <BaseHeader headingLevel="h2">Навыки</BaseHeader>
   <div class="flex flex-wrap gap-2">
-    <div v-for="(item, index) in data" :key="index" class="p-2 bg-orange-300">
+    <div v-for="(item, index) in data" :key="index" class="p-2 bg-surface">
       {{ Object.keys(item)[0] }}
     </div>
   </div>
