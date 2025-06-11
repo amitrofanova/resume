@@ -26,7 +26,9 @@ const getLink = (item: ContactItem) => {
       <span v-if="contact?.preferable" class="font-bold text-sm font-bold"
         >Предпочтительный способ связи</span
       >
-      <a :href="getLink(contact)" target="_blank" class="text-secondary">{{ contact.value }}</a>
+      <a :href="getLink(contact)" target="_blank" class="text-secondary hover:underline">{{
+        contact.value
+      }}</a>
     </li>
   </ul>
 </template>

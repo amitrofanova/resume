@@ -17,7 +17,11 @@ const getStaskString = (stackArray: string[]) => stackArray.join(', ');
     <div class="flex items-center">
       <span class="italic">{{ item.companyName }}</span>
       &nbsp;|&nbsp;
-      <a :href="item.companyWebsite" target="_blank" class="text-sm text-gray-400 underline">
+      <a
+        :href="item.companyWebsite"
+        target="_blank"
+        class="text-sm text-gray-400 underline hover:no-underline"
+      >
         {{ item.companyWebsite }}
       </a>
     </div>
