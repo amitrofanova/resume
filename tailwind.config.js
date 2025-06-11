@@ -6,9 +6,10 @@ export default {
     extend: {
       colors: {
         bg: 'var(--color-bg)',
+        surface: 'var(--color-surface)',
         text: 'var(--color-text)',
         primary: 'var(--color-primary)',
-        surface: 'var(--color-surface)',
+        secondary: 'var(--color-secondary)',
       },
     },
     container: {
