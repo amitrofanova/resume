@@ -17,4 +17,8 @@
     --color-text: theme('colors.gray.100');
     --color-primary: theme('colors.orange.600');
   }
+
+  * {
+    @apply transition-colors duration-200;
+  }
 }
