@@ -3,6 +3,7 @@
   "jobTitle": "Frontend-разработчик",
   "about": "Специализируюсь на Vue.js. Работала над созданием промышленного маркетплейса с нуля до production. Люблю работать в команде, узнавать новое, улучшать старое.",
   "contacts": [
+    { "type": "github", "value": "https://github.com/amitrofanova" },
     { "type": "phone", "value": "+7 (919) 925-02-88" },
     { "type": "email", "value": "mittralena@yandex.ru" },
     { "type": "messenger", "value": "https://t.me/lucubratiuncula", "preferable": true }
