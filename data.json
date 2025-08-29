@@ -10,6 +10,28 @@
   ],
   "experience": [
     {
+      "companyName": "Центр информационных технологий Тюменской области",
+      "companyWebsite": "https://citto.ru/",
+      "beginDate": "Март 2025",
+      "endDate": "настоящее время",
+      "jobTitle": "Frontend-разработчик",
+      "tasks": ["поддержка и доработка функционала систем правительства Тюменской области"],
+      "stack": [
+        "JavaScript",
+        "TypeScript",
+        "Vue 3 / Vue 2",
+        "Nuxt 3",
+        "Pinia",
+        "REST API",
+        "GraphQL",
+        "Vite",
+        "Quasar",
+        "Vuetify",
+        "Naive UI",
+        "Tailwind"
+      ]
+    },
+    {
       "companyName": "BirdsBuild",
       "companyWebsite": "https://bb.market",
       "beginDate": "Март 2021",
@@ -77,7 +99,8 @@
     { "SQL": "basic" },
     { "Storybook": "middle" },
     { "Figma": "basic" },
-    { "Vitest": "basic" }
+    { "Vitest": "basic" },
+    { "Tailwind": "basic" }
   ],
   "education": {
     "level": "Высшее",
