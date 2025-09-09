@@ -13,8 +13,8 @@ const getStaskString = (stackArray: string[]) => stackArray.join(', ');
 <template>
   <BaseHeader headingLevel="h2">Опыт работы</BaseHeader>
   <div v-for="item in items" :key="item.jobTitle" class="grid gap-2">
-    <h3 class="mt-3 text-lg font-bold">{{ item.jobTitle }}</h3>
-    <div class="flex items-center">
+    <h3 class="mt-4 text-lg font-bold">{{ item.jobTitle }}</h3>
+    <div>
       <span class="italic">{{ item.companyName }}</span>
       &nbsp;|&nbsp;
       <a

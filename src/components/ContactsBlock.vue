@@ -22,11 +22,11 @@ const getLink = (item: ContactItem) => {
 
 <template>
   <ul class="flex flex-col gap-2">
-    <li v-for="(contact, index) in contacts" :key="index" class="flex flex-wrap">
+    <li v-for="(contact, index) in contacts" :key="index">
       <span v-if="contact?.preferable" class="font-bold text-sm font-bold"
         >Предпочтительный способ связи</span
       >
-      <a :href="getLink(contact)" target="_blank" class="text-secondary hover:underline">{{
+      <a :href="getLink(contact)" target="_blank" class="block text-secondary hover:underline">{{
         contact.value
       }}</a>
     </li>
