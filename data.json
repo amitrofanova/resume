@@ -1,0 +1,105 @@
+{
+  "name": "Митрофанова Алена",
+  "jobTitle": "Frontend-разработчик",
+  "about": "Более 4 лет создаю Vue.js приложения. Люблю работать в команде, узнавать новое, улучшать старое.",
+  "contacts": [
+    { "type": "github", "value": "https://github.com/amitrofanova" },
+    { "type": "phone", "value": "+7 (919) 925-02-88" },
+    { "type": "email", "value": "mittralena@yandex.ru" },
+    { "type": "messenger", "value": "https://t.me/lucubratiuncula", "preferable": true }
+  ],
+  "experience": [
+    {
+      "companyName": "Центр информационных технологий Тюменской области",
+      "companyWebsite": "https://citto.ru/",
+      "beginDate": "Март 2025",
+      "endDate": "настоящее время",
+      "jobTitle": "Frontend-разработчик",
+      "tasks": ["поддержка и доработка функционала систем правительства Тюменской области"],
+      "stack": [
+        "JavaScript",
+        "TypeScript",
+        "Vue 3 / Vue 2",
+        "Nuxt 3",
+        "Pinia",
+        "REST API",
+        "Vite",
+        "Quasar",
+        "Vuetify",
+        "Naive UI",
+        "Tailwind"
+      ]
+    },
+    {
+      "companyName": "BirdsBuild",
+      "companyWebsite": "https://bb.market",
+      "beginDate": "Март 2021",
+      "endDate": "Декабрь 2024",
+      "jobTitle": "Frontend-разработчик",
+      "tasks": [
+        "разработка промышленного маркетплейса с нуля до production",
+        "создание внутренней библиотеки компонентов",
+        "интеграция с backend - REST API, GraphQL",
+        "перевод проекта на TypeScript",
+        "рефакторинг и приведение кода к единообразному виду",
+        "участие в принятии архитектурных решений",
+        "участие в оценке сложности задач",
+        "разработка инструментов для администратора",
+        "разработка инструментов для переводчиков",
+        "локализация (nuxt-i18n)",
+        "описание компонентов в Storybook",
+        "участие в код-ревью",
+        "работа по методологии Agile с Jira и Confluence"
+      ],
+      "stack": [
+        "JavaScript",
+        "TypeScript",
+        "Vue 3 (Composition API)",
+        "Nuxt 3",
+        "Pinia",
+        "REST API",
+        "GraphQL",
+        "Vite"
+      ]
+    },
+    {
+      "companyName": "Flowwow",
+      "companyWebsite": "https://flowwow.com/",
+      "beginDate": "Май 2018",
+      "endDate": "Январь 2019",
+      "jobTitle": "Frontend-разработчик",
+      "tasks": [
+        "разработка интерфейсов",
+        "верстка по макетам в Figma с Pixel Perfect",
+        "исправление дефектов"
+      ],
+      "stack": ["JavaScript", "PHP", "HTML", "CSS"]
+    }
+  ],
+  "skills": [
+    { "JavaScript": "advanced" },
+    { "Vue.js": "advanced" },
+    { "CSS": "advanced" },
+    { "HTML": "advanced" },
+    { "GraphQL": "middle" },
+    { "REST API": "advanced" },
+    { "Vuex": "middle" },
+    { "Pinia": "middle" },
+    { "Git": "advanced" },
+    { "SQL": "basic" },
+    { "Storybook": "middle" },
+    { "Figma": "basic" },
+    { "Vitest": "basic" },
+    { "Tailwind": "basic" }
+  ],
+  "education": {
+    "level": "Высшее",
+    "university": "Тюменский государственный университет, Тюмень",
+    "faculty": "Институт математики и компьютерных наук",
+    "specialisation": "Математическое обеспечение и администрирование информационных систем",
+    "graduationYear": "2013",
+    "degree": "математик-программист"
+  },
+  "portfolio": [],
+  "contribution": ["Перевод MDN документации на русский язык"]
+}
