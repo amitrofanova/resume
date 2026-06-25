@@ -1,0 +1,115 @@
+{
+  "name": "Митрофанова Алена",
+  "jobTitle": "Frontend-разработчик",
+  "contacts": [
+    { "type": "github", "value": "https://github.com/amitrofanova" },
+    { "type": "phone", "value": "+7 (919) 925-02-88" },
+    { "type": "email", "value": "mittralena@yandex.ru" },
+    { "type": "messenger", "value": "https://t.me/lucubratiuncula", "preferable": true }
+  ],
+  "experience": [
+    {
+      "companyName": "Центр информационных технологий Тюменской области",
+      "companyWebsite": "https://citto.ru/",
+      "beginDate": "Март 2025",
+      "endDate": "настоящее время",
+      "jobTitle": "Frontend-разработчик",
+      "tasks": [
+        "Добавила новый функционал и улучшила старый для 8 проектов и одной библиотеки",
+        "Оптимизировала скорость загрузки и SEO, добившись роста показателей Lighthouse в зелёную зону и улучшения индексации страниц",
+        "Провела миграцию легаси-проекта на современный стек",
+        "Оперативно исправляю дефекты",
+        "Разрабатываю с нуля портал для предпринимателей, где они могут получить информацию о контрольно-надзорной деятельности, провести самообследование и получить рекомендации по устранению нарушений"
+      ],
+      "stack": [
+        "JavaScript",
+        "TypeScript",
+        "Vue 2 / Vue 3",
+        "Nuxt 3 / Nuxt 4",
+        "Pinia",
+        "REST API",
+        "Webpack / Vite",
+        "Quasar",
+        "Vuetify",
+        "Naive UI",
+        "Nuxt UI",
+        "PrimeVue",
+        "Tailwind"
+      ]
+    },
+    {
+      "companyName": "BirdsBuild",
+      "companyWebsite": "https://bb.market",
+      "beginDate": "Март 2021",
+      "endDate": "Декабрь 2024",
+      "jobTitle": "Frontend-разработчик",
+      "tasks": [
+        "Вошла в команду на этапе идеи и с нуля запустила B2B-маркетплейс",
+        "Реализовала ключевые user-flow (каталог, склад, сделки, личный кабинет)",
+        "Внедрила UI-библиотеку (30+ компонентов) с документацией в Storybook",
+        "Внедрила мультиавторизацию, регистрацию с подтверждением почты и телефона, расширенную регистрацию для предприятий",
+        "Реализовала локализацию, позволив бизнесу масштабироваться на 6 стран",
+        "Создала внутренние инструменты для переводчиков, исключив участие разработчиков из процесса перевода",
+        "Внедрила механизмы монетизации",
+        "Проводила код-ревью и рефакторинг",
+        "Участвовала в принятии архитектурных решений и оценке сложности задач",
+        "Работала по методологии Agile с Jira и Confluence",
+        "Менторила младших разработчиков"
+      ],
+      "stack": [
+        "JavaScript",
+        "TypeScript",
+        "Vue 3 (Composition API)",
+        "Nuxt 3",
+        "Pinia",
+        "REST API",
+        "GraphQL",
+        "Vite",
+        "CSS Module"
+      ]
+    },
+    {
+      "companyName": "Flowwow",
+      "companyWebsite": "https://flowwow.com/",
+      "beginDate": "Май 2018",
+      "endDate": "Январь 2019",
+      "jobTitle": "Frontend-разработчик",
+      "tasks": [
+        "Разрабатывала интерфейсы для международного сервиса доставки подарков, обеспечивая Pixel Perfect и кросс-браузерную совместимость",
+        "Верстала письма и лэндинги"
+      ],
+      "stack": ["JavaScript", "PHP", "HTML", "CSS"]
+    }
+  ],
+  "skills": [
+    { "JavaScript": "advanced" },
+    { "Vue.js": "advanced" },
+    { "Nuxt.js": "middle" },
+    { "TypeScript": "middle" },
+    { "CSS": "advanced" },
+    { "HTML": "advanced" },
+    { "GraphQL": "middle" },
+    { "REST API": "advanced" },
+    { "Vuex": "middle" },
+    { "Pinia": "middle" },
+    { "Git": "advanced" },
+    { "Storybook": "middle" },
+    { "Figma": "basic" },
+    { "Vitest": "basic" },
+    { "Tailwind": "middle" },
+    { "SQL": "basic" },
+    { "Node.js": "basic" },
+    { "Fastify.js": "basic" },
+    { "Prisma": "basic" }
+  ],
+  "education": {
+    "level": "Высшее",
+    "university": "Тюменский государственный университет, Тюмень",
+    "faculty": "Институт математики и компьютерных наук",
+    "specialisation": "Математическое обеспечение и администрирование информационных систем",
+    "graduationYear": "2013",
+    "degree": "математик-программист"
+  },
+  "portfolio": [],
+  "contribution": ["Перевод MDN документации на русский язык"]
+}
