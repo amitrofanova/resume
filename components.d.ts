@@ -9,6 +9,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     BaseHeader: typeof import('./src/components/ui/BaseHeader.vue')['default']
+    DownloadPdf: typeof import('./src/components/ui/DownloadPdf.vue')['default']
     ThemeToggle: typeof import('./src/components/ui/ThemeToggle.vue')['default']
   }
 }
