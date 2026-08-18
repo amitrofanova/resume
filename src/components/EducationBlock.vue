@@ -9,8 +9,10 @@ defineProps<Props>();
 </script>
 
 <template>
-  <BaseHeader headingLevel="h2">Образование</BaseHeader>
-  <p class="text-sm">{{ data.level }}</p>
-  <p class="text-lg font-bold">{{ data.university }}</p>
-  <p class="text-sm">{{ data.faculty }}, {{ data.specialisation }}</p>
+  <section>
+    <BaseHeader headingLevel="h2">Образование</BaseHeader>
+    <p class="text-sm">{{ data.level }}</p>
+    <p class="text-lg font-bold">{{ data.university }}</p>
+    <p class="text-sm">{{ data.faculty }}, {{ data.specialisation }}</p>
+  </section>
 </template>

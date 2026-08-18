@@ -9,10 +9,12 @@ defineProps<Props>();
 </script>
 
 <template>
-  <BaseHeader headingLevel="h2">Навыки</BaseHeader>
-  <div class="flex flex-wrap gap-2">
-    <div v-for="(item, index) in data" :key="index" class="p-2 bg-surface">
-      {{ Object.keys(item)[0] }}
+  <section>
+    <BaseHeader headingLevel="h2">Навыки</BaseHeader>
+    <div class="flex flex-wrap gap-2">
+      <div v-for="(item, index) in data" :key="index" class="p-2 bg-surface">
+        {{ Object.keys(item)[0] }}
+      </div>
     </div>
-  </div>
+  </section>
 </template>

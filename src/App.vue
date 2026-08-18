@@ -21,7 +21,7 @@ const { data, error, loading } = useFetch(`${baseUrl}data.json`);
       <ThemeToggle />
     </header>
     <main class="md:flex">
-      <section class="md:w-1/2 flex flex-col gap-10 p-5 bg-surface text-text">
+      <div class="md:w-1/2 flex flex-col gap-10 p-5 bg-surface text-text">
         <DescriptionBlock>
           <template #name>
             {{ data.name }}
@@ -34,13 +34,13 @@ const { data, error, loading } = useFetch(`${baseUrl}data.json`);
           </template>
         </DescriptionBlock>
         <ContactsBlock :contacts="data.contacts" />
-      </section>
-      <section class="grow p-5 pb-20 bg-bg text-text border-r border-[var(--color-surface)]">
+      </div>
+      <div class="grow p-5 pb-20 bg-bg text-text border-r border-[var(--color-surface)]">
         <ExperienceBlock :items="data.experience" />
         <EducationBlock :data="data.education" />
         <SkillsBlock :data="data.skills" />
         <ContributionBlock :data="data.contribution" />
-      </section>
+      </div>
     </main>
   </div>
   <div v-else-if="error">{{ error }}</div>
@@ -89,12 +89,12 @@ const { data, error, loading } = useFetch(`${baseUrl}data.json`);
     align-items: stretch;
   }
 
-  main > section:first-child {
+  main > div:first-child {
     flex: 0 0 40%;
     width: 40%;
   }
 
-  main > section:last-child {
+  main > div:last-child {
     flex: 1 1 auto;
     padding-bottom: 1.25rem;
   }
