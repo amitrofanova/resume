@@ -1,0 +1,145 @@
+@layer reset, tokens, base, layout, components;
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+  }
+}
+
+@layer tokens {
+  :root,
+  html.light {
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  :root {
+    --bg: light-dark(#f4f1eb, #12181b);
+    --fg: light-dark(#1c2428, #e7eef0);
+    --muted: light-dark(#5c6b71, #9aa8ae);
+    --accent: light-dark(#1f4e5f, #7eb8c4);
+    --surface: light-dark(#fffdf8, #1a2226);
+    --border: color-mix(in oklab, var(--fg) 14%, transparent);
+    --page-max: 52rem;
+    --page-pad: 1.25rem;
+    --header-height: 4rem;
+    --font: system-ui, 'Segoe UI', sans-serif;
+  }
+}
+
+@layer base {
+  html {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font);
+    line-height: 1.5;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      transition: none !important;
+    }
+  }
+}
+
+@layer layout {
+  .page-shell {
+    min-height: 100dvh;
+  }
+
+  .page-width {
+    width: min(100% - 2 * var(--page-pad), var(--page-max));
+    margin-inline: auto;
+  }
+
+  .page-main {
+    padding-block: 2.5rem 4rem;
+  }
+}
+
+@layer components {
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid var(--border);
+    background: color-mix(in oklab, var(--bg) 84%, transparent);
+    backdrop-filter: blur(12px);
+  }
+
+  .site-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: var(--header-height);
+  }
+
+  .site-header__brand {
+    color: inherit;
+    font-weight: 650;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+  }
+
+  .site-header__controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.4rem;
+  }
+
+  .site-header__control {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    min-height: 2.25rem;
+    padding: 0.3rem 0.65rem;
+    border: 1px solid var(--border);
+    border-radius: 0.55rem;
+    background: var(--surface);
+    color: inherit;
+    font: inherit;
+    font-size: 0.875rem;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .site-header__control:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  .site-header__control[aria-current='page'] {
+    border-color: color-mix(in oklab, var(--accent) 50%, var(--border));
+    background: color-mix(in oklab, var(--accent) 12%, var(--surface));
+  }
+
+  .site-header__icon {
+    flex: none;
+    color: var(--fg);
+  }
+}

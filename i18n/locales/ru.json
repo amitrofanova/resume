@@ -1,3 +1,11 @@
 {
-  "siteTitle": "Алёна Митрофанова — резюме"
+  "siteTitle": "Алёна Митрофанова — резюме",
+  "header": {
+    "language": "Язык",
+    "themeToDark": "Включить тёмную тему",
+    "themeToLight": "Включить светлую тему",
+    "downloadTxt": "TXT",
+    "downloadPdf": "PDF",
+    "downloadSoon": "Появится на следующем шаге"
+  }
 }

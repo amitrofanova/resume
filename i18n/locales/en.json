@@ -1,3 +1,11 @@
 {
-  "siteTitle": "Alena Mitrofanova — resume"
+  "siteTitle": "Alena Mitrofanova — resume",
+  "header": {
+    "language": "Language",
+    "themeToDark": "Switch to dark theme",
+    "themeToLight": "Switch to light theme",
+    "downloadTxt": "TXT",
+    "downloadPdf": "PDF",
+    "downloadSoon": "Coming in a later step"
+  }
 }
