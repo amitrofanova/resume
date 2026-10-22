@@ -1,0 +1,121 @@
+import { contacts } from './contacts'
+import type { Resume } from './types'
+
+export const resumeEn = {
+  name: 'Alena Mitrofanova',
+  role: 'Frontend Developer',
+  about:
+    'Frontend developer with 4 years of experience building web apps. I have launched products from scratch (a B2B marketplace), improved performance, and designed resilient authentication.',
+  contacts,
+  experience: [
+    {
+      company: 'IT Center of the Tyumen Region',
+      role: 'Frontend Developer',
+      start: '2025-03',
+      end: null,
+      highlights: [
+        'Raised Lighthouse scores to 90+ by setting up Nuxt SSR and semantic markup; Core Web Vitals improved by ~30%, with stronger SEO and organic traffic.',
+        'Introduced Vitest and Playwright on ~80% of critical flows (e2e, unit, integration), cutting production bugs and regression time.',
+        'Migrated a Gulp + Vue 2 app to Vite, Vue 3 Composition API, TypeScript, Nuxt 3, and Tailwind; builds became ~7× faster.',
+        'Reworked a Vue 3 + TypeScript + Vuetify admin-panel generator used by 5 projects, so shared screens change in one place and support tickets dropped.',
+        'Built an interactive portal for entrepreneurs on Vue 3, TypeScript, Nuxt 4, and Nuxt UI: dynamic questionnaires and a report builder for supervisory requirements.',
+        'Building a MAX messenger chatbot admin on Vue 3, Quasar, and Vue Router: one entry point to dozens of chats and bulk messaging.',
+      ],
+      stack: [
+        'JavaScript (ES6+)',
+        'TypeScript',
+        'Vue.js 2/3',
+        'Nuxt.js 3/4',
+        'Pinia',
+        'Vue Router',
+        'REST API',
+        'Webpack',
+        'Vite',
+        'CI/CD',
+        'Git',
+        'Vitest',
+        'Playwright',
+        'Quasar',
+        'Vuetify',
+        'Naive UI',
+        'Nuxt UI',
+        'PrimeVue',
+        'Tailwind',
+        'SCSS',
+      ],
+    },
+    {
+      company: 'Build Board',
+      role: 'Frontend Developer',
+      start: '2022-11',
+      end: '2024-12',
+      highlights: [
+        'Joined at the idea stage and launched a B2B marketplace from scratch on Vite, Vue 3 (Composition API), Nuxt 3, and Pinia.',
+        'Worked in Agile, contributed to architecture and estimates, reviewed code, and mentored junior developers.',
+        'Delivered core flows: offers, warehouse, deals.',
+        'Designed resilient auth with multi-accounting, tax-registry verification, passwordless SMS and OAuth, guest cart/likes merge, and analytics — which raised conversion from guest actions to sign-up.',
+        'Shipped 10+ account and settings sections (organization data, notifications, sessions, address book), reducing support load.',
+        'Added Nuxt i18n for 6 countries and internal translator tools so localization does not block developers.',
+        'Enabled SSR with LCP under 1.5s and better indexing.',
+        'Integrated Apollo Client (GraphQL) with TypeScript types generated from the backend schema.',
+        'Introduced a UI library of 80+ components documented in Storybook.',
+        'Covered key business logic with Vitest, Vue Test Utils, and Playwright.',
+      ],
+      stack: [
+        'JavaScript (ES6+)',
+        'TypeScript',
+        'Vue.js 3',
+        'Nuxt.js 3',
+        'Pinia',
+        'Vuex',
+        'REST API',
+        'GraphQL',
+        'Vite',
+        'CSS Modules',
+        'CI/CD',
+        'Vitest',
+        'Playwright',
+        'i18n',
+        'Storybook',
+      ],
+    },
+  ],
+  skills: [
+    {
+      title: 'Languages & markup',
+      items: ['JavaScript', 'TypeScript', 'HTML', 'CSS', 'SCSS', 'SQL'],
+    },
+    {
+      title: 'Vue ecosystem',
+      items: ['Vue.js 2/3', 'Nuxt.js 3/4', 'Composition API', 'Pinia', 'Vuex', 'Vue Router'],
+    },
+    {
+      title: 'UI',
+      items: ['Vuetify', 'Quasar', 'Naive UI', 'Nuxt UI', 'PrimeVue', 'Tailwind', 'Storybook', 'Figma'],
+    },
+    {
+      title: 'Data & APIs',
+      items: ['REST API', 'GraphQL', 'WebSocket'],
+    },
+    {
+      title: 'Quality',
+      items: ['Vitest', 'Playwright', 'Core Web Vitals', 'SSR', 'i18n', 'CI/CD'],
+    },
+    {
+      title: 'Tooling',
+      items: ['Vite', 'Webpack', 'Git', 'GitLab', 'Docker'],
+    },
+  ],
+  languages: [
+    { name: 'Russian', level: 'Native' },
+    { name: 'English', level: 'B2' },
+  ],
+  education: [
+    {
+      institution: 'Tyumen State University',
+      faculty: 'Institute of Mathematics, Natural Sciences and Information Technologies',
+      field: 'Mathematical software and information systems administration',
+      year: '2013',
+    },
+  ],
+} satisfies Resume
