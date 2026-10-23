@@ -7,6 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "pdf": "node scripts/generate-pdf.mjs",
     "lint": "eslint .",
     "postinstall": "nuxt prepare"
   },
@@ -21,7 +22,8 @@
     "@nuxt/icon": "^2.5.1",
     "@nuxtjs/color-mode": "^4.0.1",
     "@nuxtjs/i18n": "^10.6.0",
-    "eslint": "^10.13.0"
+    "eslint": "^10.13.0",
+    "playwright": "^1.64.1"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

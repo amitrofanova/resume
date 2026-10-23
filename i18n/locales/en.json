@@ -5,13 +5,12 @@
     "language": "Language",
     "themeToDark": "Switch to dark theme",
     "themeToLight": "Switch to light theme",
-    "downloadTxt": "TXT",
     "downloadPdf": "PDF",
-    "downloadSoon": "Coming in a later step"
+    "downloadPdfLabel": "Save resume as PDF"
   },
   "sections": {
-    "about": "About",
-    "experience": "Experience",
+    "about": "Summary",
+    "experience": "Work Experience",
     "skills": "Skills",
     "stack": "Stack",
     "languages": "Languages",

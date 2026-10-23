@@ -33,7 +33,6 @@ export default defineNuxtConfig({
       icons: [
         'lucide:sun',
         'lucide:moon',
-        'lucide:file-text',
         'lucide:file-down',
         'lucide:mail',
         'lucide:send',

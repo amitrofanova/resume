@@ -2,8 +2,11 @@
 const { locale, locales, t } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 const colorMode = useColorMode()
+const { app } = useRuntimeConfig()
 
 const isDark = computed(() => colorMode.value === 'dark')
+const pdfName = computed(() => `alena-mitrofanova-${locale.value}.pdf`)
+const pdfHref = computed(() => `${app.baseURL}${pdfName.value}`)
 
 const localeLinks = computed(() =>
   locales.value.map((item) => {
@@ -60,25 +63,15 @@ function toggleTheme() {
           />
         </button>
 
-        <button
-          type="button"
+        <a
           class="site-header__control"
-          disabled
-          :title="t('header.downloadSoon')"
-        >
-          <Icon class="site-header__icon" name="lucide:file-text" size="1.1em" />
-          {{ t('header.downloadTxt') }}
-        </button>
-
-        <button
-          type="button"
-          class="site-header__control"
-          disabled
-          :title="t('header.downloadSoon')"
+          :href="pdfHref"
+          :download="pdfName"
+          :aria-label="t('header.downloadPdfLabel')"
         >
           <Icon class="site-header__icon" name="lucide:file-down" size="1.1em" />
           {{ t('header.downloadPdf') }}
-        </button>
+        </a>
       </div>
     </div>
   </header>

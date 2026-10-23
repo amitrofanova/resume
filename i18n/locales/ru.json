@@ -5,13 +5,12 @@
     "language": "Язык",
     "themeToDark": "Включить тёмную тему",
     "themeToLight": "Включить светлую тему",
-    "downloadTxt": "TXT",
     "downloadPdf": "PDF",
-    "downloadSoon": "Появится на следующем шаге"
+    "downloadPdfLabel": "Сохранить резюме как PDF"
   },
   "sections": {
-    "about": "Обо мне",
-    "experience": "Опыт",
+    "about": "О себе",
+    "experience": "Опыт работы",
     "skills": "Навыки",
     "stack": "Стек",
     "languages": "Языки",
