@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     disableTransition: true,
   },
   i18n: {
+    baseUrl: 'https://amitrofanova.github.io',
     defaultLocale: 'ru',
     strategy: 'prefix_except_default',
     detectBrowserLanguage: false,

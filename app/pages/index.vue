@@ -23,9 +23,7 @@ const contactItems = computed(() => [
   },
 ])
 
-useHead(() => ({
-  title: t('siteTitle'),
-}))
+useResumeSeo()
 </script>
 
 <template>
