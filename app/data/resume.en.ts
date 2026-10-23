@@ -10,6 +10,10 @@ export const resumeEn = {
   experience: [
     {
       company: 'IT Center of the Tyumen Region',
+      website: {
+        label: 'citto.ru',
+        href: 'https://citto.ru/',
+      },
       role: 'Frontend Developer',
       start: '2025-03',
       end: null,
@@ -46,6 +50,10 @@ export const resumeEn = {
     },
     {
       company: 'Build Board',
+      website: {
+        label: 'bb.market',
+        href: 'https://bb.market/',
+      },
       role: 'Frontend Developer',
       start: '2022-11',
       end: '2024-12',

@@ -11,6 +11,7 @@ export type Contacts = {
 
 export type Job = {
   company: string
+  website: ContactLink
   role: string
   start: string
   end: string | null

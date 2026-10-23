@@ -1,5 +1,6 @@
 {
   "siteTitle": "Алёна Митрофанова — резюме",
+  "present": "настоящее время",
   "header": {
     "language": "Язык",
     "themeToDark": "Включить тёмную тему",
@@ -7,5 +8,13 @@
     "downloadTxt": "TXT",
     "downloadPdf": "PDF",
     "downloadSoon": "Появится на следующем шаге"
+  },
+  "sections": {
+    "about": "Обо мне",
+    "experience": "Опыт",
+    "skills": "Навыки",
+    "stack": "Стек",
+    "languages": "Языки",
+    "education": "Образование"
   }
 }

@@ -34,6 +34,8 @@
     --page-pad: 1.25rem;
     --header-height: 4rem;
     --font: system-ui, 'Segoe UI', sans-serif;
+    --radius: 1rem;
+    --shadow: 0 1px 2px color-mix(in oklab, var(--fg) 8%, transparent);
   }
 }
 
@@ -96,13 +98,6 @@
     min-height: var(--header-height);
   }
 
-  .site-header__brand {
-    color: inherit;
-    font-weight: 650;
-    letter-spacing: -0.02em;
-    text-decoration: none;
-  }
-
   .site-header__controls {
     display: flex;
     flex-wrap: wrap;
@@ -141,5 +136,209 @@
   .site-header__icon {
     flex: none;
     color: var(--fg);
+  }
+
+  .resume {
+    display: flex;
+    flex-direction: column;
+    gap: 2.75rem;
+  }
+
+  .resume h1,
+  .resume h2,
+  .resume h3 {
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    text-wrap: balance;
+  }
+
+  .resume h1 {
+    margin: 0;
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+
+  .resume h2 {
+    margin: 0 0 1rem;
+    color: var(--accent);
+    font-size: 0.92rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .resume h3 {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+
+  .resume p {
+    margin: 0;
+  }
+
+  .hero__role {
+    margin-bottom: 0.4rem;
+    color: var(--accent);
+    font-size: 0.95rem;
+    font-weight: 650;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .resume-lead,
+  .job-card__highlights,
+  .edu-card p {
+    color: var(--fg);
+  }
+
+  .resume-lead {
+    max-width: 42rem;
+  }
+
+  .muted {
+    color: var(--muted);
+  }
+
+  .contact-list,
+  .language-list,
+  .chip-list,
+  .job-card__highlights {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact-list,
+  .language-list {
+    list-style: none;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.1rem;
+    margin-top: 1.35rem;
+  }
+
+  .contact-list a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .contact-list a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+
+  .contact-list__icon {
+    flex: none;
+    color: var(--accent);
+  }
+
+  .job-list,
+  .skill-grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .job-card,
+  .skill-card,
+  .edu-card {
+    padding: 1.2rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+
+  .job-card {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .job-card__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.35rem 1rem;
+  }
+
+  .job-card__company,
+  .job-card__dates,
+  .edu-card .muted {
+    color: var(--muted);
+  }
+
+  .job-card__company {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.2rem 0.7rem;
+    margin-top: 0.2rem;
+  }
+
+  .job-card__site {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .job-card__site:hover {
+    text-decoration: underline;
+  }
+
+  .job-card__highlights {
+    padding-inline-start: 1.1rem;
+  }
+
+  .job-card__highlights li + li {
+    margin-top: 0.45rem;
+  }
+
+  .job-card__highlights li::marker {
+    color: var(--accent);
+  }
+
+  .chip-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    list-style: none;
+  }
+
+  .chip {
+    padding: 0.2rem 0.55rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: color-mix(in oklab, var(--accent) 9%, var(--surface));
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+
+  .skill-card {
+    display: grid;
+    align-content: start;
+    gap: 0.75rem;
+  }
+
+  .language-list {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .language-list li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.8rem;
+  }
+
+  .edu-card {
+    display: grid;
+    gap: 0.35rem;
   }
 }

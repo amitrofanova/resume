@@ -1,5 +1,6 @@
 {
   "siteTitle": "Alena Mitrofanova — resume",
+  "present": "Present",
   "header": {
     "language": "Language",
     "themeToDark": "Switch to dark theme",
@@ -7,5 +8,13 @@
     "downloadTxt": "TXT",
     "downloadPdf": "PDF",
     "downloadSoon": "Coming in a later step"
+  },
+  "sections": {
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "stack": "Stack",
+    "languages": "Languages",
+    "education": "Education"
   }
 }

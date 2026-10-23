@@ -1,8 +1,6 @@
 <script setup lang="ts">
 const { locale, locales, t } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
-const localePath = useLocalePath()
-const resume = useResume()
 const colorMode = useColorMode()
 
 const isDark = computed(() => colorMode.value === 'dark')
