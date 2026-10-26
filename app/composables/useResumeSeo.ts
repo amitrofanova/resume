@@ -1,24 +1,20 @@
 import { resumes } from '~/data/resume'
-import { siteOrigin } from '~/utils/siteOrigin'
 
 export function useResumeSeo() {
   const resume = useResume()
-  const { locale } = useI18n()
-  const { app } = useRuntimeConfig()
+  const { locale, baseUrl } = useI18n()
 
   const title = computed(() => `${resume.value.name} — ${resume.value.role}`)
   const description = computed(() => resume.value.about[0] ?? '')
 
   const pageUrl = computed(() => {
-    const base = app.baseURL.endsWith('/') ? app.baseURL : `${app.baseURL}/`
     const suffix = locale.value === 'en' ? 'en' : ''
-    return new URL(`${base}${suffix}`, siteOrigin).href.replace(/\/+$/, '')
+    return new URL(suffix, baseUrl.value).href.replace(/\/+$/, '')
   })
 
-  const ogImage = computed(() => {
-    const base = app.baseURL.endsWith('/') ? app.baseURL : `${app.baseURL}/`
-    return new URL(`${base}og-${locale.value}.png`, siteOrigin).href
-  })
+  const ogImage = computed(
+    () => new URL(`og-${locale.value}.png`, baseUrl.value).href,
+  )
 
   useSeoMeta({
     title,
