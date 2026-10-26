@@ -47,7 +47,11 @@ useResumeSeo()
 
     <section>
       <h2>{{ t('sections.about') }}</h2>
-      <p v-html="resume.about" class="resume-lead" />
+      <div class="resume-lead">
+        <p v-for="paragraph in resume.about" :key="paragraph">
+          {{ paragraph }}
+        </p>
+      </div>
     </section>
 
     <section>

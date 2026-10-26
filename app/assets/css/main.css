@@ -144,20 +144,20 @@
     gap: 2.75rem;
   }
 
-  .resume h1,
-  .resume h2,
-  .resume h3 {
+   h1,
+   h2,
+   h3 {
     letter-spacing: -0.03em;
     line-height: 1.2;
     text-wrap: balance;
   }
 
-  .resume h1 {
+   h1 {
     margin: 0;
-    font-size: clamp(2rem, 6vw, 3rem);
+    font-size: clamp(2rem, 6vw, 2.5rem);
   }
 
-  .resume h2 {
+   h2 {
     margin: 0 0 1rem;
     color: var(--accent);
     font-size: 0.92rem;
@@ -166,7 +166,7 @@
     text-transform: uppercase;
   }
 
-  .resume h3 {
+   h3 {
     margin: 0;
     font-size: 1.05rem;
   }
@@ -191,6 +191,8 @@
   }
 
   .resume-lead {
+    display: grid;
+    gap: 1rem;
     max-width: 42rem;
   }
 
@@ -257,12 +259,8 @@
     gap: 1rem;
   }
 
-  .job-card__header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 0.35rem 1rem;
+  .job-card__role {
+    margin-bottom: .5rem;
   }
 
   .job-card__company,
@@ -279,13 +277,21 @@
     margin-top: 0.2rem;
   }
 
+  .job-card__dates {
+    font-size: 0.85rem;
+  }
+
+  .job-card__name {
+    font-style: italic;
+  }
+
   .job-card__site {
     color: var(--accent);
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   .job-card__site:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .job-card__highlights {
@@ -369,7 +375,7 @@
   }
 
   .resume {
-    gap: 1.15rem;
+    gap: 2.5rem;
   }
 
   .resume h1 {
@@ -398,7 +404,6 @@
   .contact-list a,
   .job-card__site {
     color: inherit;
-    text-decoration: none;
   }
 
   .job-list,
@@ -425,12 +430,31 @@
     break-inside: avoid;
   }
 
+  .chip-list {
+    display: block;
+  }
+
   .chip {
     padding: 0;
     border: none;
     border-radius: 0;
     background: none;
     font-size: inherit;
+    display: inline;
+    color: #444;
+  }
+  
+  .chip:not(:last-child)::after {
+    content: " \00b7  "; /* · с пробелами */
+  }
+
+  .job-card {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .job-card__role {
+    margin-top: .85rem
   }
 
   .job-card__highlights li::marker {

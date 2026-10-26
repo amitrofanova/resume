@@ -39,7 +39,7 @@ export type SpokenLanguage = {
 export type Resume = {
   name: string
   role: string
-  about: string
+  about: string[]
   contacts: Contacts
   experience: Job[]
   skills: SkillGroup[]

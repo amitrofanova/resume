@@ -12,26 +12,24 @@ const { locale, t } = useI18n()
 <template>
   <article class="job-card">
     <header class="job-card__header">
-      <div>
-        <h3 class="job-card__role">{{ job.role }}</h3>
-        <p class="job-card__company">
-          {{ job.company }}
-          <a
-            class="job-card__site"
-            :href="job.website.href"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            {{ job.website.label }}
-          </a>
-        </p>  
-      </div>
-      <p class="job-card__dates">
+      <h3 class="job-card__role">{{ job.role }}</h3>
+      <p class="job-card__company">
+        <span class="job-card__name">{{ job.company }}</span> |
+        <a
+          class="job-card__site"
+          :href="job.website.href"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          {{ job.website.label }}
+        </a>
+      </p>  
+      <div class="job-card__dates">
         <time :datetime="job.start">{{ formatMonth(job.start, locale) }}</time>
         –
         <time v-if="job.end" :datetime="job.end">{{ formatMonth(job.end, locale) }}</time>
         <span v-else>{{ t('present') }}</span>
-      </p>
+      </div>
     </header>
 
     <ul class="job-card__highlights">

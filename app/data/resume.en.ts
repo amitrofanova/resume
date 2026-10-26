@@ -4,8 +4,11 @@ import type { Resume } from './types'
 export const resumeEn = {
   name: 'Alena Mitrofanova',
   role: 'Frontend Developer',
-  about:
-    'Frontend developer with 4 years of experience building web apps. I have launched products from scratch (a B2B marketplace), improved performance, and designed resilient authentication.',
+  about: [
+    'Frontend developer with 4 years of commercial experience. I build Vue 3 and TypeScript web apps — from architecture through performance work and automated testing.',
+    'Work includes a B2B marketplace, legacy-to-modern stack migrations, SSR, GraphQL integrations, and component libraries.',
+    'I estimate work, mentor junior developers, and review code.',
+  ],
   contacts,
   experience: [
     {
@@ -18,11 +21,11 @@ export const resumeEn = {
       start: '2025-03',
       end: null,
       highlights: [
-        'Raised Lighthouse scores to 90+ by setting up Nuxt SSR and semantic markup; Core Web Vitals improved by ~30%, with stronger SEO and organic traffic.',
-        'Introduced Vitest and Playwright on ~80% of critical flows (e2e, unit, integration), cutting production bugs and regression time.',
-        'Migrated a Gulp + Vue 2 app to Vite, Vue 3 Composition API, TypeScript, Nuxt 3, and Tailwind; builds became ~7× faster.',
+        'Raised Lighthouse scores to 90+ and Core Web Vitals by ~30%, which improved SEO and organic search traffic.',
+        'Introduced automated testing with Vitest and Playwright, covering ~70% of critical flows (e2e, unit, integration) and cutting production bugs and regression time.',
+        'Migrated a Gulp + Vue 2 app to Vite, Vue 3 Composition API, TypeScript, Nuxt 3, and Tailwind; builds became ~10× faster.',
         'Reworked a Vue 3 + TypeScript + Vuetify admin-panel generator used by 5 projects, so shared screens change in one place and support tickets dropped.',
-        'Built an interactive portal for entrepreneurs on Vue 3, TypeScript, Nuxt 4, and Nuxt UI: dynamic questionnaires and a report builder for supervisory requirements.',
+        'Built an accessible (a11y) interactive portal for entrepreneurs from scratch on Vue 3, TypeScript, Nuxt 4, and Nuxt UI: dynamic questionnaires and a report builder for supervisory requirements.',
         'Building a MAX messenger chatbot admin on Vue 3, Quasar, and Vue Router: one entry point to dozens of chats and bulk messaging.',
       ],
       stack: [
@@ -49,7 +52,7 @@ export const resumeEn = {
       ],
     },
     {
-      company: 'Build Board',
+      company: 'Build Bird',
       website: {
         label: 'bb.market',
         href: 'https://bb.market/',
@@ -59,15 +62,13 @@ export const resumeEn = {
       end: '2024-12',
       highlights: [
         'Joined at the idea stage and launched a B2B marketplace from scratch on Vite, Vue 3 (Composition API), Nuxt 3, and Pinia.',
-        'Worked in Agile, contributed to architecture and estimates, reviewed code, and mentored junior developers.',
         'Delivered core flows: offers, warehouse, deals.',
-        'Designed resilient auth with multi-accounting, tax-registry verification, passwordless SMS and OAuth, guest cart/likes merge, and analytics — which raised conversion from guest actions to sign-up.',
+        'Designed resilient auth with multi-accounting, passwordless SMS and OAuth, guest cart/likes merge, and end-to-end analytics — which raised conversion from guest actions to sign-up.',
         'Shipped 10+ account and settings sections (organization data, notifications, sessions, address book), reducing support load.',
         'Added Nuxt i18n for 6 countries and internal translator tools so localization does not block developers.',
-        'Enabled SSR with LCP under 1.5s and better indexing.',
         'Integrated Apollo Client (GraphQL) with TypeScript types generated from the backend schema.',
         'Introduced a UI library of 80+ components documented in Storybook.',
-        'Covered key business logic with Vitest, Vue Test Utils, and Playwright.',
+        'Covered key business logic with Vitest, Vue Test Utils, and Playwright, cutting regression time and production bugs.',
       ],
       stack: [
         'JavaScript (ES6+)',
@@ -85,33 +86,35 @@ export const resumeEn = {
         'Playwright',
         'i18n',
         'Storybook',
+        'Figma',
+        'Agile',
       ],
     },
   ],
   skills: [
     {
       title: 'Languages & markup',
-      items: ['JavaScript', 'TypeScript', 'HTML', 'CSS', 'SCSS', 'SQL'],
+      items: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3', 'SCSS'],
     },
     {
       title: 'Vue ecosystem',
-      items: ['Vue.js 2/3', 'Nuxt.js 3/4', 'Composition API', 'Pinia', 'Vuex', 'Vue Router'],
+      items: ['Vue.js 2/3', 'Composition API', 'Nuxt.js 3/4', 'Pinia', 'Vuex', 'Vue Router'],
     },
     {
-      title: 'UI',
-      items: ['Vuetify', 'Quasar', 'Naive UI', 'Nuxt UI', 'PrimeVue', 'Tailwind', 'Storybook', 'Figma'],
+      title: 'Performance & accessibility',
+      items: ['Web Accessibility (a11y)', 'SSR', 'Core Web Vitals'],
     },
     {
       title: 'Data & APIs',
       items: ['REST API', 'GraphQL', 'WebSocket'],
     },
     {
-      title: 'Quality',
-      items: ['Vitest', 'Playwright', 'Core Web Vitals', 'SSR', 'i18n', 'CI/CD'],
+      title: 'Testing',
+      items: ['Vitest', 'Vue Test Utils', 'Playwright'],
     },
     {
       title: 'Tooling',
-      items: ['Vite', 'Webpack', 'Git', 'GitLab', 'Docker'],
+      items: ['Vite', 'Git', 'CI/CD', 'Docker'],
     },
   ],
   languages: [

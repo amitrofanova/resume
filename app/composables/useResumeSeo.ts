@@ -1,5 +1,4 @@
 import { resumes } from '~/data/resume'
-import { htmlToPlainParagraph } from '~/utils/htmlToPlainParagraph'
 import { siteOrigin } from '~/utils/siteOrigin'
 
 export function useResumeSeo() {
@@ -8,7 +7,7 @@ export function useResumeSeo() {
   const { app } = useRuntimeConfig()
 
   const title = computed(() => `${resume.value.name} — ${resume.value.role}`)
-  const description = computed(() => htmlToPlainParagraph(resume.value.about))
+  const description = computed(() => resume.value.about[0] ?? '')
 
   const pageUrl = computed(() => {
     const base = app.baseURL.endsWith('/') ? app.baseURL : `${app.baseURL}/`
